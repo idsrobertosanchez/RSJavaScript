@@ -1,0 +1,5 @@
+@charset "utf-8";
+mi-boton, mi-boton-2 {
+    padding: 10px;
+    border: 5px solid green;
+}
