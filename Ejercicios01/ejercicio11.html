@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 11</title>
+</head>
+
+<body>
+    <p>Genera una funcion e imprime en consola el resultado</p>
+    <script>
+
+        function john() {
+            return 'Jhon';
+        }
+
+        function jacob() {
+            return 'Jacob';
+        }
+
+        function validarD(name) {
+            switch (name) {
+                case john():
+                    console.log('I will run if name === "Jhon"')
+                    break;
+                case 'Ja'+'ne':
+                    console.log('I will run if name ==== "Jane"')
+                    break;
+                case john() + ' ' + jacob() + ' Jingleheimer Schimidt':
+                    console.log('His name is equal to name too!');
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        console.log(validarD('Jhon'));
+        console.log(validarD('Jane'));
+        console.log(validarD('Jhon Jacob Jingleheimer Schimidt'));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 16</title>
+</head>
+
+<body>
+    <p>Teniendo la funcion foo, cual es el resultado de cada sentencia</p>
+    <script>
+      var isLegal = function(age){
+        return age >= 18
+      }
+      var tall = function(height){
+        return height >= 5.11;
+      }
+      var suitable = function(tall){
+        return this.isLegal && tall;
+      }
+      var isRoyalty = function(status){
+        return status === 'royalty';
+      }
+      var specialCase = function(hasInvitaction){
+        return this.isRoyalty && hasInvitaction;
+      }
+      var canEnterOurBar = function(suitable){
+        return suitable || this.specialCase;
+      }
+
+      console.log(isLegal(15));
+      console.log(tall(4));
+      console.log(suitable(2));
+      console.log(isRoyalty('royalty'));
+      console.log(specialCase(true));
+      console.log(canEnterOurBar(true))
+    </script>
+</body>
+
+</html>

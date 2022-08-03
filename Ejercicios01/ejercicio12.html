@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 12</title>
+</head>
+
+<body>
+    <p>Genera una funcion e imprime en consola el resultado</p>
+    <script>
+        function validarD(x) {
+            switch (x) {
+                case 'a':
+                case 'b':
+                case 'c':
+                    console.log('Either a, b or c was selected');
+                    break;
+                case 'd': 
+                    console.log('Only d was selected.');
+                    break;
+                default:
+                    console.log('No case was matched.')
+                    break;
+            }
+        }
+
+        console.log(validarD('a'));
+        console.log(validarD('b'));
+        console.log(validarD('c'));
+        console.log(validarD('d'));
+        console.log(validarD(''));
+
+    </script>
+</body>
+
+</html>

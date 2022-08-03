@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 9</title>
+</head>
+
+<body>
+    <p>Genera una funcion e imprime en consola el resultado</p>
+    <script>
+
+        function validarD() {
+            var animal = 'Lion';
+            switch (animal) {
+                case 'Dog':
+                    console.log('I will not run since animal !== "Dog"');
+                    break;
+                case 'Cat':
+                    console.log('I will not run since animal !== "Cat"');
+                    break;
+                default:
+                    console.log('I will run since animal does not match any other case');
+                    break;
+            }
+        }
+
+        console.log(validarD())
+    </script>
+</body>
+
+</html>
