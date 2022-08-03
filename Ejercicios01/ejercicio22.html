@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 22</title>
+</head>
+
+<body>
+    <p>Genera una funcion e imprime en consola el resultado</p>
+    <script>
+        function mat(){
+            var a = [1,2,3,8,9,10];
+            a.slice(0,3).concat([4,5,6], a.slice(3, 6));
+            console.log(a);
+        }
+        function mat2(){
+            var a = [1,2,3,8,9,10];
+            a.splice(3, 0, ...[4,5,6,7]);
+            console.log(a);
+        }
+        function mat3(){
+            var array = ['a','b','c'];
+            console.log(array.join('->'));//Concatena el array con ->
+            console.log(array.join('.'));//Concatena el arrar con '.'
+            console.log('a.b.c'.split('.'));//Divide la cadena en array por el simbolo '.'
+            console.log('5.4.3.2.1'.split('.'));//Divide la cadena en arrat por el simbolo '.'
+        }
+        function mat4(){
+            var array = [5,10,15,20,25];
+            console.log(Array.isArray(array)); //Si es un array
+            console.log(array.includes(10));   //dato incluido
+            console.log(array.includes(10, 2));//datos incluidos
+            console.log(array.indexOf(25));//posicion del dato
+            console.log(array.lastIndexOf(10,0));
+        }
+        function mat5(){
+            var array = ['a', 'b', 'c', 'd', 'e', 'f'];
+            console.log(array.copyWithin(5, 0, 1)); //copia de la posicion 0 a la 1 y la coloca en la posicion 5
+            console.log(array.copyWithin(3, 0, 3));//copia de la posicion 0 a la 3 y la coloca en la posicion 3
+            console.log(array.fill('Z', 0, 5));//Posicion 0 a la 5 va colocar 'Z'
+        }
+        function mat6(){
+            var array = ['Alberto', 'Ana', 'Mauricio', 'Bernardo', 'Zoe'];
+            console.log(array.sort());// Ordena de la A a la Z
+            console.log(array.reverse());//Ordena de la Z a la A
+        }
+        mat();
+        console.log('-------------')
+        mat2();
+        console.log('-------------')
+        mat3();
+        console.log('-------------')
+        mat4();
+        console.log('-------------')
+        mat5();
+        console.log('-------------')
+        mat6();
+    </script>
+</body>
+
+</html>
