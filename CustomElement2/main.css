@@ -1,0 +1,11 @@
+@charset "utf-8";
+body {
+    padding: 16px;
+}
+#container{
+    padding: 10px 0;
+}
+button[is='mi-boto-extendido']{
+    padding: 10px;
+    font-size: bold;
+}

@@ -1,0 +1,14 @@
+/*Solo este estilo afecta al template*/
+:host {
+    display: block;
+    border: 1px solid green;
+    margin-bottom: 2rem;
+}
+h1#mi-id{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid green;
+}
+p#mi-p{
+    margin-left: 1rem;
+}
