@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 03</title>
+</head>
+<script>
+    var people = [{
+        id: 1,
+        name: "John",
+        age: 28
+    }, {
+        id: 2,
+        name: "Jane",
+        age: 31
+    }, {
+        id: 3,
+        name: "Peter",
+        age: 55
+    }];
+
+</script>
+
+<body>
+    <p>Dado el siguiente arreglo de objetos:</p>
+
+    <p>var people = [{</p>
+    <p>id: 1,</p>
+    <p>name: "John",</p>
+    <p>age: 28</p>
+    <p>}, {</p>
+    <p>id: 2,</p>
+    <p>name: "Jane",</p>
+    <p>age: 31</p>
+    <p>}, {</p>
+    <p>id: 3,</p>
+    <p>name: "Peter",</p>
+    <p>age: 55 }];</p>
+    <p>Genera la función en javascript que filtre a las personas menores de 35 años.</p>
+
+    <script>
+        var res = people.filter(function(p){
+          var edad = JSON.stringify(p.age);
+          return edad <= 35;
+        });
+        document.write(JSON.stringify(res));
+    </script>
+</body>
+
+</html>

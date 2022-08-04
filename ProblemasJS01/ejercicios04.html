@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 04</title>
+</head>
+<script>
+    let people = [
+        { name: "bob", id: 1 }, { name: "john", id: 2 },
+        { name: "alex", id: 3 }, { name: "john", id: 3 },
+        { name: "bob", id: 1 }, { name: "john", id: 2 },
+        { name: "alex", id: 3 }, { name: "john", id: 3 }
+    ];
+
+</script>
+
+<body>
+    <p>Dado el siguiente arreglo de objetos:</p>
+
+    <p>let people = [</p>
+    <p>{ name: "bob", id: 1 }, { name: "john", id: 2 },</p>
+    <p>{ name: "alex", id: 3 }, { name: "john", id: 3 }</p>
+    <p>];</p>
+    <p>Genera la función para obtener el numero de veces que aparece cada nombre.</p>
+
+    <script>
+        var resPeople = [];
+        var repetidos = {};
+        people.forEach(function (n) {
+            var nombre = JSON.stringify(n.name);
+            resPeople.push(n.name);
+        })
+        resPeople = resPeople.slice().sort();
+        resPeople.forEach(function(valor){            
+            repetidos[valor] = (repetidos[valor] || 0) + 1;
+            console.log(repetidos[valor]);
+        })
+        document.write(repetidos);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 05</title>
+</head>
+<script>
+    var myArray = [1, 2, 3, 4];
+    var mayor = 0;
+    var menor = 99999;
+</script>
+
+<body>
+    <p>Dado el siguiente arreglo:</p>
+    <p>var myArray = [1, 2, 3, 4];</p>
+    <p>Genera la función para imprimir en consola el numero máximo y el numero
+        mínimo.</p>
+    <script>
+        myArray.forEach(function(n){
+            if(mayor < n){
+                mayor = n;
+            }
+            if(menor > n){
+                menor = n;
+            }
+        })
+        console.log('mayor', mayor);
+        console.log('menor', menor);
+    </script>
+</body>
+
+</html>

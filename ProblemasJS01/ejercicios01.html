@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Ejercicio 01</title>
+</head>
+<script>
+    var clientes = ['Carla', 'Fernanda', 'Carlos' , 'Pedro', 'Ivan'];
+    var empleador = ['Juan', 'Jesus', 'Raul', 'Raymundo'];   
+    
+</script>
+<body>
+    <p>Tiene dos arreglos de String, ‘clientes’ y ‘empleados’, y deseas combinarlas para
+        crear una arreglo de contactos. ¿Qué método sería el más adecuado para esta
+        tarea? Prueba todas las opciones y describe el resultado.</p>
+    <script>
+         document.write('<br>Clientes: '+ clientes); 
+        document.write('<br>Empleador: '+ empleador);
+    </script>
+    <p>a. concat</p>
+    <script>
+       
+        var con = clientes.concat(empleador);//concatena array
+        document.write(con);
+    </script>
+    
+     <p>b. join</p>
+     <script>
+        var con = clientes.join(empleador);//une los elementos
+        document.write(con);
+    </script>
+     <p>c. push</p>
+     <script>
+        var con = clientes.push('Alberto');//Añade elementos y devuelve tamaño array
+        document.write(con);
+    </script>
+     <p>d. splice</p>
+     <script>
+        var con = clientes.splice(0,2);//elimina y devuelve el resultado
+        document.write(con);
+    </script>
+</body>
+
+</html>
