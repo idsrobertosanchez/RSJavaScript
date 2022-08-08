@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 01</title>
+</head>
+<script>
+    var personArr = [
+        {
+            'personId': 123,
+            'name': 'Jhon',
+            'city': 'Melbourne',
+            'phoneNo': '1234567890'
+        },
+        {
+            'personId': 124,
+            'name': 'Amelia',
+            'city': 'Melbourne',
+            'phoneNo': '1234567890'
+        },
+        {
+            'personId': 125,
+            'name': 'Jhon',
+            'city': 'Melbourne',
+            'phoneNo': '1234567890'
+        },
+        {
+            'personId': 126,
+            'name': 'Jhon',
+            'city': 'Melbourne',
+            'phoneNo': '1234567890'
+        }
+    ];
+</script>
+
+<body>
+    <div id="divTabla">
+        <table>
+            <thead>
+                <tr>
+                    <th>PersonalId</th>
+                    <th>Name</th>
+                    <th>City</th>
+                    <th>Phone</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+    
+            </tbody>
+        </table>
+    </div>
+   <script>
+    // Obteniendo el cuerpo de la tabla a donde añadiremos nuestros datos
+let tableBody = document.getElementById('tbody');
+
+// Recorriendo los datos de ejemplo
+for (let i = 0; i < personArr.length; i++) {
+    // Creando los 'td' que almacenará cada parte de la información del usuario actual
+    let personId = `<td>${personArr[i].personId}</td>`;
+    let name = `<td>${personArr[i].name}</td>`;
+    let city = `<td>${personArr[i].city}</td>`;
+    let phoneNo = `<td>${personArr[i].phoneNo}</td>`;
+
+    tableBody.innerHTML += `<tr>${personId + name + city + phoneNo}</tr>`;
+}
+   </script>
+</body>
+
+
+</html>

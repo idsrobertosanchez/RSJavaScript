@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 02</title>
+</head>
+<body>
+    <ul>
+        <li id="C1" data-id="US" data-dial-code="1">USA</li>
+        <li id="C2" data-id="CA" data-dial-code="1">Canada</li>
+        <li id="C3" data-id="FF" data-dial-code="3">France</li>
+    </ul>
+  <script>
+    document.addEventListener('click', function(e){
+        e.preventDefault();
+        var element = e.target;
+        var id = element.getAttribute('id');
+        var dataId = element.getAttribute('data-id');
+        var dataDialCode = element.getAttribute('data-dial-code');
+
+        alert(
+            'Elemento Seleccionado: \n' +
+            'ID elemto: ' + id + '\n' +
+            'ISO ID: ' + dataId + '\n' +
+            'Dial Code: ' + dataDialCode 
+        );
+    })
+
+  </script>
+</body>
+
+
+</html>

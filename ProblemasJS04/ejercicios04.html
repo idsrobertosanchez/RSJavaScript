@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 04</title>
+</head>
+
+<body>
+    <script>
+       let zero = 0;
+       function multipli(x) { return x * 2; }
+       function add(a = 1 + zero, b = a, c = b + a, d = multipli(c)){
+        console.log((a + b + c), d)
+       }
+       add(1); //a = 1, b = 1, c = 2, d = 4
+       add(3); //a = 3, b = 3, c = 6, d = 12
+       add(2, 7); //a = 2, b = 7, c = 9, d = 18
+       add(1, 2, 5); //a = 1, b = 2, c = 5, d = 10
+       add(1, 2, 5, 10); //a =1, b = 2, c = 5, d = 10
+    </script>
+
+</body>
+
+
+</html>

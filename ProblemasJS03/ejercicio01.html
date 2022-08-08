@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 01</title>
+</head>
+
+<body>
+    <div>
+        <h1>Raton</h1>
+        <p id="datos">Pagina[0,0]</p>
+    </div>
+    <div>
+        <h1>Teclado</h1>
+        <p id="datos2">Caracter[]</p>
+    </div>
+
+    <script>
+        function mouseMove(event) {
+            console.log("pageX: ", event.pageX,
+                "pageY: ", event.pageY,
+                "clientX: ", event.clientX,
+                "clientY:", event.clientY);
+            document.getElementById('datos').innerHTML = 'Pagina['+event.pageX+','+event.pageY+']';
+        }
+
+        function keyDetect(event){
+            console.log("KeyValue: ", event.key,
+                "CodeValue: ",event.code);
+                document.getElementById('datos2').innerHTML = 'Caracter['+event.key+']';
+        }
+
+        window.addEventListener('mousemove', mouseMove);
+        window.addEventListener('keydown', keyDetect);
+    </script>
+</body>
+
+
+</html>
