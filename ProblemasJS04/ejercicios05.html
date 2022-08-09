@@ -8,11 +8,28 @@
 
 <body>
     <script>
-   class MyClass{
-    
-   }
+        class MyClass {
+            constructor() {
+                this.names_ = [];
+            }
+
+            set name(value) {
+                this.names_.push(value);
+            }
+
+            get name() {
+                return this.names_[this.names_.length - 1];
+            }
+        }
+
+        const myClassInstance = new MyClass();
+        myClassInstance.name = 'Joe';
+        myClassInstance.name = 'Bob';
+
+        console.log(myClassInstance.name); //Obtiene el array de la funcion get name
+        console.log(myClassInstance.names_);//Obtiene el array de names
     </script>
-   
+
 </body>
 
 
