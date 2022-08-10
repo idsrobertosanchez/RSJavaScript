@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "index.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "OpenwcLitelement",
+          "declaration": {
+            "name": "OpenwcLitelement",
+            "module": "./src/OpenwcLitelement.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "openwc-litelement.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "openwc-litelement",
+          "declaration": {
+            "name": "OpenwcLitelement",
+            "module": "/src/OpenwcLitelement.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/OpenwcLitelement.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "OpenwcLitelement",
+          "members": [
+            {
+              "kind": "method",
+              "name": "__increment"
+            },
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "'Hey there'",
+              "privacy": "public",
+              "attribute": "title"
+            },
+            {
+              "kind": "field",
+              "name": "counter",
+              "type": {
+                "text": "number"
+              },
+              "default": "5",
+              "privacy": "public",
+              "attribute": "counter"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "fieldName": "title"
+            },
+            {
+              "name": "counter",
+              "fieldName": "counter"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "openwc-litelement",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "OpenwcLitelement",
+          "declaration": {
+            "name": "OpenwcLitelement",
+            "module": "src/OpenwcLitelement.js"
+          }
+        }
+      ]
+    }
+  ]
+}
