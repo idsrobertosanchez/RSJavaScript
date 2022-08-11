@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 09</title>
+</head>
+
+<body>
+    <div id="post-102">
+        <p>I like Confirm modal.</p>
+        <a data-deletepost="post-102" onclick="dltBTN('102')">Delete post</a>
+    </div>
+    <div id="post-103">
+        <p>That's wat to cool!</p>
+        <a data-deletepost="post-103" onclick="dltBTN('103')">Delete post</a>
+    </div>
+    <script>
+        function dltBTN(data) {
+            var opcion = confirm("Click en Aceptar o Cancelar");
+            if (opcion == true) {
+                var deleteBTN = document.querySelectorAll("[data-deletepost^= post-" +data+"]");
+                deleteBTN.forEach(item => {
+                    console.log(item.dataset.deletepost);
+                    var div = document.getElementById(item.dataset.deletepost);
+                    if(div != null){
+                        while(div.hasChildNodes()){
+                            div.removeChild(div.lastChild);
+                        }
+                    }
+                })
+            } else {
+               alert('Cancelo la eliminacion');
+            }
+        }
+
+    </script>
+</body>
+
+
+</html>

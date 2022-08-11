@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejercicio 08</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            #firstname;
+            #lastname;
+            
+            constructor(firstname, lastname) {
+                this.#firstname = firstname;
+                this.#lastname = lastname;
+            }
+        }
+
+        let person = new Person('Jhon', 'Doe');
+        console.log(person.firstname, person.lastname);
+
+        person.firstname = 'Foo';
+        person.lastname = 'Bar';
+        console.log(person.firstname, person.lastname);
+
+    </script>
+</body>
+
+
+</html>
